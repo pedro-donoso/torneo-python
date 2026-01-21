@@ -17,7 +17,7 @@ def registrar():
             edad = int(edad)
             if 12 <= edad <= 70: break
             print("❌ 12-70 años")
-        except: print("❌ EDAD requerido, ingresa Número")
+        except: print("❌ EDAD requerida, ingresa Número")
     
     while True:
         nivel = input("➤ NIVEL (1-5): ")
@@ -25,7 +25,7 @@ def registrar():
             nivel = int(nivel)
             if 1 <= nivel <= 5: break
             print("❌ 1-5")
-        except: print("❌ Número")
+        except: print("❌ NIVEL requerido, ingresa Número")
     
     participantes.append({"nombre": nombre, "edad": edad, "nivel": nivel})
     print("✅ Jugador/a Registrado")
@@ -154,7 +154,7 @@ while True:
     print("\n📋 OPCIONES:")
     print("1️⃣ Registrar Jugador/a")
     print("2️⃣ Equipo") 
-    print("3️⃣ Ver")
+    print("3️⃣ Ver Equipos")
     print("4️⃣ Partida")
     print("5️⃣ Ranking")
     print("6️⃣ Reporte completo")
