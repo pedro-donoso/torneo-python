@@ -37,9 +37,9 @@ def formar_equipo():
         print("❌ Min 2 libres")
         return
     
-    print("\n🎮 DISPONIBLES:")
+    print("\n🎮 JUGADORES DISPONIBLES:")
     for i, p in enumerate(libres):
-        print(f"  {i+1}. {p['nombre']} (E:{p['edad']}, N:{p['nivel']})")
+        print(f"  {i+1}. {p['nombre']} (Equipo:{p['edad']}, Nivel:{p['nivel']})")
     
     print("\n👥 EQUIPO")
     while True:
@@ -90,7 +90,7 @@ def registrar_partida():
         print("❌ Equipos inválidos")
         return
     
-    ganador = input("➤ Ganador: ").strip()
+    ganador = input("➤ Nombre Ganador: ").strip()
     if ganador not in [eq1, eq2]:
         print("❌ Eq1 o Eq2")
         return
