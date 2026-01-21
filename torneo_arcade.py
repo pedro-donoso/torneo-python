@@ -80,9 +80,9 @@ def registrar_partida():
     print("\n⚔️ PARTIDA")
     mostrar()
     
-    eq1 = input("➤ Equipo 1: ").strip()
-    eq2 = input("➤ Equipo 2: ").strip()
-    
+    eq1 = input("➤ Nombre Equipo 1: ").strip()
+    eq2 = input("➤ Nombre Equipo 2: ").strip()
+
     eq1_ok = eq1 in [e["nombre"] for e in equipos]
     eq2_ok = eq2 in [e["nombre"] for e in equipos]
     
@@ -116,7 +116,7 @@ def ranking():
 
 def reporte_completo():
     print("\n" + "="*60)
-    print("📊 REPORTE COMPLETO - TORNE PIXELS RETRO")
+    print("📊 REPORTE COMPLETO - TORNEO PIXELS RETRO")
     print("="*60)
     
     print("\n👥 PARTICIPANTES REGISTRADOS ({})".format(len(participantes)))
@@ -131,7 +131,7 @@ def reporte_completo():
         print(f"\n{e['nombre']}")
         print("   Integrantes:")
         for j in e['integrantes']:
-            print(f"     • {j['nombre']} (E:{j['edad']}, N:{j['nivel']})")
+            print(f"     • {j['nombre']} (Edad:{j['edad']}, Nivel:{j['nivel']})")
         print(f"   Puntos totales: {e['puntos']}")
     
     if equipos:
