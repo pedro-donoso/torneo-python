@@ -17,7 +17,7 @@ def registrar():
             edad = int(edad)
             if 12 <= edad <= 70: break
             print("❌ 12-70 años")
-        except: print("❌ Número")
+        except: print("❌ EDAD requerido, ingresa Número")
     
     while True:
         nivel = input("➤ NIVEL (1-5): ")
