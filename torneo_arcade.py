@@ -64,7 +64,7 @@ def formar_equipo():
         nombre = input("➤ NOMBRE NUEVO: ").strip()
     
     equipos.append({"nombre": nombre, "integrantes": [libres[j1], libres[j2]], "puntos": 0})
-    print(f"✅ '{nombre}' creado")
+    print(f"✅ Equipo'{nombre}' creado")
 
 def mostrar():
     if not equipos:
@@ -153,7 +153,7 @@ print("=== 🎮 TORNEO PIXELS RETRO ===")
 while True:
     print("\n📋 OPCIONES:")
     print("1️⃣ Registrar Jugador/a")
-    print("2️⃣ Equipo") 
+    print("2️⃣ Formar Equipo") 
     print("3️⃣ Ver Equipos")
     print("4️⃣ Partida")
     print("5️⃣ Ranking")
